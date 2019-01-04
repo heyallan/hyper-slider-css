@@ -1,0 +1,42 @@
+{
+  "name": "hyper-slider-css",
+  "version": "1.0.0",
+  "description": "CSS content slider",
+  "abstract": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyallan/hyper-slider-css.git"
+  },
+  "keywords": [
+    "css",
+    "slider",
+    "hyper"
+  ],
+  "author": {
+    "username": "heyallan",
+    "twitter": {
+      "username": "heyallanmoreno",
+      "url": "https://twitter.com/heyallanmoreno"
+    }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyallan/hyper-slider-css/issues"
+  },
+  "homepage": "https://heyallan.github.io/hyper-slider-css",
+  "main": "dist/slider.min.css",
+  "repo": {
+    "url": "https://github.com/heyallan/hyper-slider-css"
+  },
+  "keyword": "slider",
+  "scope": "@metacss",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-header": "^2.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rename": "^1.2.2"
+  }
+}

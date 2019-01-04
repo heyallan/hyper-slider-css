@@ -1,0 +1,110 @@
+/* slider */
+:root {
+  --slider-aspect-ratio: 16/9;
+	--slider-background-color: rgba(40,44,52,1);
+	--slider-text-color: rgba(255,255,255,1);
+	--slider-font-size: 0.8em;
+}
+
+.slider {
+	position: relative;
+	margin: 0 0 1rem;
+	font-size: var(--slider-font-size);
+}
+
+/* scroll tray */
+.slider ul {
+	list-style: none;
+	padding: 0;
+	position: relative;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	color: var(--slider-text-color);
+	counter-reset: slidesTotal;
+
+  /* snap type » FF, IE, S (old syntax) */
+  /* scroll-snap-type: mandatory; */
+	/* snap point » FF (old syntax) */
+  /* scroll-snap-points-x: repeat(100%); */
+
+	/* snap point » Ch, O, S, Android (new syntax) */
+  scroll-snap-type: x mandatory;
+	/* smooth href jump » Ch, FF, O, Android */
+  scroll-behavior: smooth;
+	/* momentum scroll » iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* aspect ratio */
+.slider ul::before {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	padding-top: calc(100% / (var(--slider-aspect-ratio)));
+}
+
+/* item container */
+.slider li {
+	position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+	margin: 0;
+  scroll-snap-align: center;
+	background-color: var(--slider-background-color);
+  counter-increment: slidesTotal;
+}
+
+/* item */
+.slider li img,
+.slider li video,
+.slider li iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-bottom: 0;
+	transform: translate(-50%,-50%);
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0 0 50px 5px rgba(0,0,0,.5);
+}
+.slider li iframe,
+.slider li video {
+  width: 100%;
+  height: 100%;
+}
+
+/* caption */
+.slider figcaption { font-size: inherit; }
+.slider li figcaption {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 1rem;
+	color: var(--slider-text-color);
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+/* counter pseudo-element */
+.slider ul::after {
+	position: absolute;
+	right: 0;
+	margin: 1rem;
+	padding: 3px 7px;
+	border-radius: 50px;
+	content: "1/" counter(slidesTotal);
+	background-color: rgba(0,0,0,0.5);
+}
+/* scroll hint */
+.slider ul:focus::after,
+.slider ul:hover::after {
+	content: "1/" counter(slidesTotal) " Scroll →";
+}
+/* hide counter when only 1 figure */
+.slider li:only-child {
+	z-index: 1;
+}
