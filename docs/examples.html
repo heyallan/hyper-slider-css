@@ -5,20 +5,20 @@
     <title>hyper-slider-css - CSS content slider</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="slider.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-reset-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-layout-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-properties-css"/>
+    <link rel="stylesheet" href="reset.min.css"/>
+    <link rel="stylesheet" href="layout.min.css"/>
+    <link rel="stylesheet" href="properties.min.css"/>
   </head>
   <body>
 
     <header>
-  <h1>@hyper-slider-css <span class="color-primary">v1.0.0</span></h1>
+  <h1>@hyper-slider-css <span class="color-primary">v1.0.1</span></h1>
   <nav role="navigation">
   <a href="./">Home</a>
   ·
   <a href="./usage.html">Usage</a>
-  
-  
+  ·
+  <a href="./examples.html">Examples</a>
   ·
   <a href="https://github.com/heyallan/hyper-slider-css">Repository</a>
   ·
@@ -35,16 +35,42 @@
 <main>
 
   <section>
-    <h2>Video</h2>
+    <h2>Images</h2>
 
     <div class="slider">
       <ul role="region" aria-label="Gallery" tabindex="0">
-        <li id="1"><figure><img src="//source.unsplash.com/ICw7ZkUo9Ic/925x520" alt="Slide 1"><figcaption>925x520 (16:9 Ratio)</figcaption></figure></li>
-        <li id="2"><figure><img src="//source.unsplash.com/sh3LSNbyj7k/400x400" alt="Slide 2"><figcaption>400x400 (Square)</figcaption></figure></li>
-        <li id="3"><figure><img src="//source.unsplash.com/UOZIIQIdBjM/699x200" alt="Slide 3"><figcaption>700x200 (Horizontal)</figcaption></figure></li>
-        <li id="4"><figure><img src="//source.unsplash.com/0_yjxsqjTg0/400x600" alt="Slide 4"><figcaption>400x600 (Vertical)</figcaption></figure></li>
+        <li id="1"><figure><img src="slide-1.jpeg" alt="Slide 1"><figcaption>925x520 (16:9 Ratio)</figcaption></figure></li>
+        <li id="2"><figure><img src="slide-2.jpeg" alt="Slide 2"><figcaption>400x400 (Square)</figcaption></figure></li>
+        <li id="3"><figure><img src="slide-3.jpeg" alt="Slide 3"><figcaption>700x200 (Horizontal)</figcaption></figure></li>
+        <li id="4"><figure><img src="slide-4.jpeg" alt="Slide 4"><figcaption>400x600 (Vertical)</figcaption></figure></li>
       </ul>
     </div>
+
+    <br>
+    <br>
+
+    <h2>Navigation</h2>
+
+    <nav>
+      <a href="#1">1</a> ·
+      <a href="#2">2</a> ·
+      <a href="#3">3</a> ·
+      <a href="#4">4</a>
+      URL hash navigation
+    </nav>
+
+    <nav>
+      <a href="#1"><img src="thumb-1.jpeg" alt="Go to slide 1"></a>
+      <a href="#2"><img src="thumb-2.jpeg" alt="Go to slide 2"></a>
+      <a href="#3"><img src="thumb-3.jpeg" alt="Go to slide 3"></a>
+      <a href="#4"><img src="thumb-4.jpeg" alt="Go to slide 4"></a>
+      URL hash navigation
+    </nav>
+
+    <br>
+    <br>
+
+    <h2>Video: YouTube, HTML5, Vimeo</h2>
 
     <div class="slider">
       <ul role="region" aria-label="gallery" tabindex="0">
@@ -53,22 +79,6 @@
         <li id="3"><iframe src="https://player.vimeo.com/video/143594133" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></li>
       </ul>
     </div>
-
-    <h2>Navigation</h2>
-
-    <nav>
-      <a href="#1">1</a> ·
-      <a href="#2">2</a> ·
-      <a href="#3">3</a> ·
-      URL hash navigation
-    </nav>
-
-    <nav>
-      <a href="#1"><img src="//source.unsplash.com/ICw7ZkUo9Ic/50x50" alt="Slide 1"></a>
-      <a href="#2"><img src="//source.unsplash.com/sh3LSNbyj7k/50x50" alt="Slide 1"></a>
-      <a href="#3"><img src="//source.unsplash.com/UOZIIQIdBjM/50x50" alt="Slide 1"></a>
-      URL hash navigation
-    </nav>
 
   </section>
 </main>

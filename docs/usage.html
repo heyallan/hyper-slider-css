@@ -5,20 +5,20 @@
     <title>hyper-slider-css - CSS content slider</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="slider.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-reset-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-layout-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-properties-css"/>
+    <link rel="stylesheet" href="reset.min.css"/>
+    <link rel="stylesheet" href="layout.min.css"/>
+    <link rel="stylesheet" href="properties.min.css"/>
   </head>
   <body>
 
     <header>
-  <h1>@hyper-slider-css <span class="color-primary">v1.0.0</span></h1>
+  <h1>@hyper-slider-css <span class="color-primary">v1.0.1</span></h1>
   <nav role="navigation">
   <a href="./">Home</a>
   ·
   <a href="./usage.html">Usage</a>
-  
-  
+  ·
+  <a href="./examples.html">Examples</a>
   ·
   <a href="https://github.com/heyallan/hyper-slider-css">Repository</a>
   ·
@@ -37,14 +37,18 @@
 
     <h2>Usage</h2>
 
+    <p><b>Slider</b></p>
+
 <pre><code>&lt;div class="slider"&gt;
   &lt;ul role="region" aria-label="Gallery" tabindex="0"&gt;
-    &lt;li id="1"&gt;&lt;figure&gt;&lt;img src="//source.unsplash.com/ICw7ZkUo9Ic/800x450" alt="Slide 1"&gt;&lt;figcaption&gt;800x450 (16:9 Ratio)&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
-    &lt;li id="2"&gt;&lt;figure&gt;&lt;img src="//source.unsplash.com/sh3LSNbyj7k/400x400" alt="Slide 2"&gt;&lt;figcaption&gt;400x400 (Square)&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
-    &lt;li id="3"&gt;&lt;figure&gt;&lt;img src="//source.unsplash.com/UOZIIQIdBjM/699x200" alt="Slide 3"&gt;&lt;figcaption&gt;700x200 (Horizontal)&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
-    &lt;li id="4"&gt;&lt;figure&gt;&lt;img src="//source.unsplash.com/0_yjxsqjTg0/400x600" alt="Slide 4"&gt;&lt;figcaption&gt;400x600 (Vertical)&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
+    &lt;li id="1"&gt;&lt;figure&gt;&lt;img src="slide-1.jpeg" alt="Slide 1"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
+    &lt;li id="2"&gt;&lt;figure&gt;&lt;img src="slide-2.jpeg" alt="Slide 2"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
+    &lt;li id="3"&gt;&lt;figure&gt;&lt;img src="slide-3.jpeg" alt="Slide 3"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
+    &lt;li id="4"&gt;&lt;figure&gt;&lt;img src="slide-4.jpeg" alt="Slide 4"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
+
+<p><b>Navigation</b></p>
 
 <pre><code>&lt;nav&gt;
   &lt;a href="#1"&gt;1&lt;/a&gt;

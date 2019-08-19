@@ -4,6 +4,7 @@
 	--slider-background-color: rgba(40,44,52,1);
 	--slider-text-color: rgba(255,255,255,1);
 	--slider-font-size: 0.8em;
+  scroll-behavior: smooth;
 }
 
 .slider {
@@ -24,17 +25,9 @@
 	color: var(--slider-text-color);
 	counter-reset: slidesTotal;
 
-  /* snap type » FF, IE, S (old syntax) */
-  /* scroll-snap-type: mandatory; */
-	/* snap point » FF (old syntax) */
-  /* scroll-snap-points-x: repeat(100%); */
-
-	/* snap point » Ch, O, S, Android (new syntax) */
-  scroll-snap-type: x mandatory;
-	/* smooth href jump » Ch, FF, O, Android */
-  scroll-behavior: smooth;
-	/* momentum scroll » iOS */
-  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* scroll snap » Ch, FF, O, S, Android */
+  scroll-behavior: smooth; /* smooth href jump » Ch, FF, O, Android */
+  -webkit-overflow-scrolling: touch; /* momentum scroll » iOS */
 }
 
 /* aspect ratio */

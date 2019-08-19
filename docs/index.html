@@ -5,20 +5,20 @@
     <title>hyper-slider-css - CSS content slider</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="slider.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-reset-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-layout-css"/>
-    <link rel="stylesheet" href="https://unpkg.com/hyper-properties-css"/>
+    <link rel="stylesheet" href="reset.min.css"/>
+    <link rel="stylesheet" href="layout.min.css"/>
+    <link rel="stylesheet" href="properties.min.css"/>
   </head>
   <body>
 
     <header>
-  <h1>@hyper-slider-css <span class="color-primary">v1.0.0</span></h1>
+  <h1>@hyper-slider-css <span class="color-primary">v1.0.1</span></h1>
   <nav role="navigation">
   <a href="./">Home</a>
   ·
   <a href="./usage.html">Usage</a>
-  
-  
+  ·
+  <a href="./examples.html">Examples</a>
   ·
   <a href="https://github.com/heyallan/hyper-slider-css">Repository</a>
   ·
@@ -40,10 +40,10 @@
     <section>
       <div class="slider">
       	<ul role="region" aria-label="Gallery" tabindex="0">
-      		<li id="1"><figure><img src="//source.unsplash.com/ICw7ZkUo9Ic/925x520" alt="Slide 1"><figcaption>925x520 (16:9 Ratio)</figcaption></figure></li>
-      		<li id="2"><figure><img src="//source.unsplash.com/sh3LSNbyj7k/400x400" alt="Slide 2"><figcaption>400x400 (Square)</figcaption></figure></li>
-      		<li id="3"><figure><img src="//source.unsplash.com/UOZIIQIdBjM/699x200" alt="Slide 3"><figcaption>700x200 (Horizontal)</figcaption></figure></li>
-      		<li id="4"><figure><img src="//source.unsplash.com/0_yjxsqjTg0/400x600" alt="Slide 4"><figcaption>400x600 (Vertical)</figcaption></figure></li>
+          <li id="1"><figure><img src="slide-1.jpeg" alt="Slide 1"><figcaption>925x520 (16:9 Ratio)</figcaption></figure></li>
+          <li id="2"><figure><img src="slide-2.jpeg" alt="Slide 2"><figcaption>400x400 (Square)</figcaption></figure></li>
+          <li id="3"><figure><img src="slide-3.jpeg" alt="Slide 3"><figcaption>700x200 (Horizontal)</figcaption></figure></li>
+          <li id="4"><figure><img src="slide-4.jpeg" alt="Slide 4"><figcaption>400x600 (Vertical)</figcaption></figure></li>
       	</ul>
       </div>
       <h2>Abstract</h2>
@@ -52,7 +52,7 @@
         <li>Scroll, swipe, and keyboard navigation</li>
         <li>Native slide animations (where available)</li>
         <li>URL hash navigation</li>
-      	<li>Custom aspect ratio</li>
+      	<li>Custom aspect ratio via CSS</li>
       </ul>
     </section>
     <section>
@@ -60,11 +60,11 @@
       <p>CDN Development (redirect to latest):</p>
       <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/hyper-slider-css@latest/dist/slider.min.css"/&gt;</code></pre>
       <p>CDN Production (specific release):</p>
-      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/hyper-slider-css@1.0.0/dist/slider.min.css"/&gt;</code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/hyper-slider-css@1.0.1/dist/slider.min.css"/&gt;</code></pre>
       <p>NPM package:</p>
       <pre><code>$ npm install --save-dev hyper-slider-css</code></pre>
       <p>CSS import:</p>
-      <pre><code>@import url(&quot;https://unpkg.com/hyper-slider-css@1.0.0/dist/slider.min.css&quot;);</code></pre>
+      <pre><code>@import url(&quot;https://unpkg.com/hyper-slider-css@1.0.1/dist/slider.min.css&quot;);</code></pre>
     </section>
   </main>
 

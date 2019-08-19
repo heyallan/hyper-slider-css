@@ -6,10 +6,10 @@ var header       = require('gulp-header');
 var nunjucks     = require('gulp-nunjucks-render');
 var pkgJson      = require('./package.json');
 var browserSync  = require('browser-sync').create();
-var banner       = ['/** <%= package.repo.url %> */\n\n'];
+var banner       = ['/** <%= package.version %> <%= package.repo.url %> */\n\n'];
 
 gulp.task('css', function() {
-  return gulp.src('./src/css/bundle.css')
+  return gulp.src('./src/css/index.css')
     .pipe(autoprefix())
     .pipe(rename(pkgJson.keyword + '.css'))
     .pipe(header(banner, { package: pkgJson }))
