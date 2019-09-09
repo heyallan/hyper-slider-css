@@ -95,7 +95,7 @@
 /* scroll hint */
 .slider ul:focus::after,
 .slider ul:hover::after {
-	content: "1/" counter(slidesTotal) " Scroll →";
+	content: "1/" counter(slidesTotal) " Scroll \2192";
 }
 /* hide counter when only 1 figure */
 .slider li:only-child {

@@ -1,5 +1,9 @@
 # changelog
 
+## 1.0.2
+
+- change counter arrow for hex value \2192
+
 ## 1.0.1
 
 - serve images locally
